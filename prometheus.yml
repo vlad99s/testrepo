@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # How frequently to scrape targets
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['192.162.1.227:9090']  # The address of the Prometheus server itself
